@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer";
 
-const scrapeProducts = async () => {
+export const scrapeProducts = async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
@@ -23,10 +23,12 @@ const scrapeProducts = async () => {
     return theFirstThree;
   });
 
-  console.log(products);
+  // console.log(products);
 
   await browser.close();
+
+  return products;
 };
 
-console.log("scraping...");
-scrapeProducts();
+// console.log("scraping...");
+// console.log(await scrapeProducts());

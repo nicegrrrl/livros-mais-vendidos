@@ -1,4 +1,4 @@
-# desafio-bgc 🫡
+# os 📚 mais vendidos
 
 Este desafio consiste em criar um sistema que retorne os _três primeiros produtos_ de um e-commerce, disponibilizando essa informação para ser consumida por API.
 
@@ -45,13 +45,13 @@ npx serverless deploy
 7. Copie o link do endpoint fornecido no terminal.
 8. A API está prontinha para ser consumida. 😄🚀
 
-### 😊 Rota
+### 💻 Rota
 
 | Método | Endpoint  | Responsabilidade        | Autenticação        |
 | ------ | --------- | ----------------------- | ------------------- |
 | GET    | /products | Lê os produtos listados | Não necessita token |
 
-### 😊 Regra de negócio
+### 🧠 Regra de negócio
 
 #### GET /products
 

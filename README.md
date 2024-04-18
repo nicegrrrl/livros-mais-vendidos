@@ -63,20 +63,26 @@ Lista todos os clientes cadastrados na aplicação.
 ```json
 [
 	{
-		"price": "R$ 69,71",
-		"id": "6e787539-7d68-4825-824f-8e759f2a07b1",
+		"price": "R$ 8,76",
+		"id": "5867831b-1711-48f7-8342-2faaef38b84d",
+		"title": "Surpresas com Água: Fazenda"
+	},
+	{
+		"price": "R$ 62,01",
+		"id": "3300a0b3-a34b-49bc-9e67-ade651e302d5",
 		"title": "Café com Deus Pai 2024: Porções Diárias de paz"
 	},
 	{
-		"price": "R$ 23,27",
-		"id": "6013b57e-acff-488b-88f6-5327ea371aef",
-		"title": "O homem mais rico da Babilônia"
-	},
-	{
 		"price": "R$ 36,81",
-		"id": "008f22d8-a934-4a68-af33-0597463f6935",
+		"id": "f0860e20-337e-4708-b61c-8ea94ce7ae33",
 		"title": "O livro que você gostaria que seus pais tivessem lido: (e seus filhos ficarão gratos por você ler)"
 	}
 ]
+
+// amostra: 18.04.2024 às 20:13
 ```
 
+
+### 💡 Pontos de melhoria
+* Executar a função addProducts() periodicamente, para manter o banco de dados atualizado;
+* Corrigir o *bug* no scrap dos produtos, tendo em vista que às vezes demora para carregar e sua função retorna um array vazio.

@@ -10,6 +10,8 @@ export const scrapeProducts = async () => {
     let results = [];
     const items = document.querySelectorAll("#gridItemRoot");
 
+    console.log(items);
+
     items.forEach((item) => {
       const title = item.querySelector(".a-link-normal > span > div");
       const price = item.querySelector("._cDEzb_p13n-sc-price_3mJ9Z");
@@ -23,12 +25,7 @@ export const scrapeProducts = async () => {
     return theFirstThree;
   });
 
-  // console.log(products);
-
   await browser.close();
 
   return products;
 };
-
-// console.log("scraping...");
-// console.log(await scrapeProducts());
